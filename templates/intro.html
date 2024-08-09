@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Kanye Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light text-dark">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="mb-4 text-center">Kanye or Not Kanye? That is the Question.</h1>
+    
+                <!-- Username Form -->
+                <form action="{{ url_for('set_username') }}" method="POST">
+                    <div class="card text-center text-white bg-dark shadow-lg">
+                        <div class="card-header">
+                            <h2 class="mb-3">Think you can keep up with Kanye's ego?</h2>
+                            <p>This quiz will test your Kanye IQ. Are you ready to level up?</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="username" class="h5">Enter your username:</label>
+                                <input type="text" class="form-control mt-3" id="username" name="username" placeholder="Your username" required>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-lg btn-block mt-4">Start Quiz</button>
+                        </div>
+                        <div class="card-footer text-center text-warning">
+                            <small>Get ready to test your Kanye knowledge!</small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
